@@ -1,0 +1,51 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+/* Base styles */
+body {
+  font-family: 'Helvetica Neue', Arial, sans-serif;
+  transition: all 0.3s ease;
+}
+
+/* Theme-specific styles */
+.theme1 {
+  --font-family: 'Helvetica Neue', Arial, sans-serif;
+}
+
+.theme2 {
+  --font-family: Georgia, 'Times New Roman', serif;
+}
+
+.theme3 {
+  --font-family: 'Pacifico', cursive;
+}
+
+body {
+  font-family: var(--font-family);
+}
+
+/* Theme 2 specific styles
+.theme2 {
+  --bg-color: #1a1a1a;
+  --text-color: #f0f0f0;
+  --primary-color: #6c5ce7;
+  --secondary-color: #2d3436;
+}
+
+.theme2-layout {
+  display: grid;
+  grid-template-columns: auto 1fr;
+}
+
+.theme2 .header {
+  grid-column: 1 / -1;
+}
+
+.theme2 main {
+  padding: 2rem;
+} */
+/* Animation for theme switching */
+.theme-transition * {
+  transition: background-color 0.3s ease, color 0.3s ease, border-color 0.3s ease;
+}
